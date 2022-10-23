@@ -5,6 +5,7 @@
     "node": "16.16.0",
     "npm": "8.14.0"
   },
+  
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",
