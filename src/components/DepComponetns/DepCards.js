@@ -15,12 +15,15 @@ import { isAutheticated } from "../../Auth.js/authHelper";
 import { sweetFailed, sweetSuccess } from "../../CommonFunctions/SweetAlert";
 import swal from "sweetalert";
 import { LinearLoading } from "../../CommonComponetns/Ccomponents";
+import { useNavigate } from "react-router-dom";
+
 
 export default function DepCards({ department, getDepartments }) {
   const classes = useStyles();
   const { token } = isAutheticated();
   const [lineLoading, setlineLoading] = useState(false);
   const [checked, setChecked] = useState(department.active ? true : false);
+  const navigate = useNavigate()
 
   const changeStatus = async (ID, departmentName) => {
     setlineLoading(true);
@@ -145,7 +148,12 @@ export default function DepCards({ department, getDepartments }) {
       </CardContent>
       <CardActions>
         <Stack spacing={2} direction="row">
-          <Button variant="outlined" size="small">
+          <Button variant="outlined" size="small"
+          
+          onClick = {()=>{
+            navigate(`/department/edit/${department._id}` , {replace:true})
+          }}
+          >
             Edit
           </Button>
           <Button
