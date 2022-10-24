@@ -1,6 +1,6 @@
 import { Container } from '@mui/material'
 import React from 'react'
-import OutlinedCard from '../components/Dashboard/dashCards'
+// import OutlinedCard from '../components/Dashboard/dashCards'
 
 const Dashboard = () => {
   return (
