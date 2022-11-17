@@ -54,6 +54,18 @@ export const useStyles = makeStyles((theme) => ({
   gapMT1: {
     marginTop: "1rem",
   },
+  gapMB: {
+    marginBottom: "2rem",
+  },
+  gapMB1: {
+    marginBottom: "1rem",
+  },
+  gapMR:{
+    marginBottom: "2rem",
+  },
+  gapMR1:{
+    marginBottom: "1rem",
+  },
 
 }));
 

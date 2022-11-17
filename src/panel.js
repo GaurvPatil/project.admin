@@ -115,7 +115,7 @@ export default function MiniDrawer() {
     },
     {
       name: "Project Guide",
-      link: "projectguide",
+      link: "projectguides",
       icon: <GroupAddIcon />,
     },
   ];
