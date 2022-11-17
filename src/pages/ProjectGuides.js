@@ -15,7 +15,7 @@ import swal from "sweetalert";
 import { sweetFailed, sweetSuccess } from "../CommonFunctions/SweetAlert";
 import { LinearLoading } from "../CommonComponetns/Ccomponents";
 
-export default function ProjectGuide() {
+export default function ProjectGuides() {
   const [loading, setLoading] = useState(true);
   const [guides, setGuides] = useState([]);
   const navigate = useNavigate();

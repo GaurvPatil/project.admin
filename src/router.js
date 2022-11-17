@@ -1,6 +1,6 @@
 import Dashboard from "./pages/Dashboard";
 
-import ProjectGuide from "./pages/ProjectGuide";
+import ProjectGuides from "./pages/ProjectGuides";
 import AddGuide from "./components/GuideComponents/AddGuide";
 
 import students from "./pages/students";
@@ -14,7 +14,7 @@ const routes = [
   { path: "/dashboard", name: "Home", element: Dashboard, exact: true },
 
   // guide
-  { path: "/projectguides", name: "Project Guide", element: ProjectGuide },
+  { path: "/projectguides", name: "Project Guide", element: ProjectGuides },
   { path: "/projectguide/add", name: "AddProjectGuide", element: AddGuide },
   {
     path: "/projectguide/edit/:id",
